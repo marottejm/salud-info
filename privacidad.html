@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad · Salud</title>
+  <meta name="description" content="Tratamiento previsto de datos, autorización y credenciales del lector personal Salud.">
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#173044;background:#f5f7f8;line-height:1.65}body{margin:0}main{max-width:680px;margin:7vh auto;padding:32px;background:#fff;border:1px solid #dfe6e9;border-radius:16px}h1{font-size:2rem;line-height:1.2}h2{font-size:1.2rem;margin-top:28px}p{margin:14px 0}a{color:#125b87;text-underline-offset:3px}code{overflow-wrap:anywhere;font-size:.85em}.status{padding:12px 16px;border-left:3px solid #7d9daf;background:#f1f6f8}footer{margin-top:34px;padding-top:18px;border-top:1px solid #e5eaed;color:#536773;font-size:.9rem}@media(max-width:760px){main{margin:16px;padding:24px}}
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Salud</a></p>
+  <h1>Privacidad de Salud</h1>
+  <p class="status">La conexión aún está pendiente. Este texto describe la configuración preparada y el uso previsto antes de autorizar la cuenta.</p>
+  <h2>Qué datos consulta y para qué</h2>
+  <p>Salud está pensado para que su titular consulte sus pasos, entrenamientos y sueño de Google Health, bajo demanda. La versión inicial solicita muestras limitadas de esos registros. No modifica los datos y no presenta una muestra parcial como un total diario.</p>
+  <p>Solicita sólo los permisos de lectura <code>googlehealth.activity_and_fitness.readonly</code> y <code>googlehealth.sleep.readonly</code>. Aunque esos permisos abarcan categorías de actividad y sueño, el código limita sus consultas a los datos indicados.</p>
+  <h2>Cómo se procesan</h2>
+  <p>La preparación inicial de OAuth se realiza en la Mac y usa el Llavero de macOS. La modalidad independiente de la Mac está preparada para ejecutarse bajo demanda en un entorno privado de OpenAI/Codex Cloud, con acceso «Solo yo».</p>
+  <p>Google y OpenAI/Codex procesarán la conexión y los resultados necesarios para responder a las consultas del titular. La conversación y los registros técnicos están sujetos a las condiciones y controles de esos servicios. Esta página no afirma que exista retención cero ni sustituye sus políticas.</p>
+  <p>El código del lector no guarda respuestas de salud en archivos ni en una base de datos propia. Los resultados que se compartan en una conversación pueden formar parte de ese historial.</p>
+  <h2>Credenciales y acceso</h2>
+  <p>La modalidad cloud utilizará Personal Vault mediante secretos de red limitados al entorno del lector. El secreto de cliente y el token de renovación tendrán como único destino permitido <code>oauth2.googleapis.com</code>. El token de acceso temporal se usará con <code>health.googleapis.com</code>.</p>
+  <p>La cuenta se vinculará sólo después de su autorización y confirmación. El lector comprobará la huella del perfil aprobado antes de consultar registros. No ofrece acceso a otras personas ni publica credenciales o datos de salud en este sitio o en repositorios.</p>
+  <h2>Cómo desconectar</h2>
+  <p>El titular puede revocar la conexión desde su <a href="https://myaccount.google.com/">cuenta de Google</a>. También puede eliminar las credenciales guardadas en el Llavero y en Personal Vault. Esto no borra automáticamente los historiales que conserven Google u OpenAI; su gestión depende de los controles de cada servicio.</p>
+  <h2>Estas páginas informativas</h2>
+  <p>No incorporan formularios, analítica, scripts ni cookies propias. No reciben datos de Google Health. El alojamiento puede procesar información técnica de las visitas conforme a sus condiciones.</p>
+  <p>El uso de datos de Google Health se limita al propósito personal descrito y debe cumplir su <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">política de datos y requisitos de uso limitado</a>.</p>
+  <footer>Texto preparado el 25 de octubre de 2026. Debe actualizarse si cambia el tratamiento o el estado de la conexión.</footer>
+</main>
+</body>
+</html>
